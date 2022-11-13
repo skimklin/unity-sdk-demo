@@ -5,13 +5,14 @@ using UnityEngine;
 public class UnityAction : MonoBehaviour
 {
 
-    async void Start()
+    void Start()
     {
 
     }
 
-    async void onWalletLogin()
+    public async void OnWalletLogin()
     {
+        Debug.Log("OnWalletLogin");
         // get current timestamp
         int timestamp = (int)(System.DateTime.UtcNow.Subtract(new System.DateTime(1970, 1, 1))).TotalSeconds;
         // set expiration time
